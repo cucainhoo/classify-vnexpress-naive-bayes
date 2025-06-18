@@ -13,7 +13,7 @@ stop_words = set(phan_hoi_stopwords.text.split())
 danh_muc_urls = {
     "Kinh doanh": "https://vnexpress.net/kinh-doanh",
     "Khoa học - Công nghệ": "https://vnexpress.net/khoa-hoc-cong-nghe",
-    "Bất động sản": "https://vnexpress.net/bat-dong-san",
+    "Bất động sản": "https://vnexpress.net/bat-dong-san", 
     "Sức khỏe": "https://vnexpress.net/suc-khoe",
     "Thể thao": "https://vnexpress.net/the-thao",
     "Giải trí": "https://vnexpress.net/giai-tri",
