@@ -5,11 +5,9 @@ from bs4 import BeautifulSoup
 
 # Danh sách từ dừng tiếng Việt
 url_stopwords = "https://docs.google.com/spreadsheets/d/e/2PACX-1vT3rt3sFA0x_mQ0GI1S8rBDowX_vYkFwrh_3Q2OQOWQoXAHguS0rhVgFhztEIoT2pJWKm5utvFsqUi0/pubhtml"
-response = requests.get(url_stopwords)
-soup = BeautifulSoup(response.text, "html.parser")
-cells = soup.find_all('td')
-stop_words = set(cell.get_text(strip=True) for cell in cells if cell.get_text(strip=True))
-
+phan_hoi_stopwords = requests.get(url_stopwords)
+phan_hoi_stopwords.encoding = "utf-8"
+stop_words = set(phan_hoi_stopwords.text.split())
 
 # Danh sách chuyên mục trên VnExpress
 danh_muc_urls = {
