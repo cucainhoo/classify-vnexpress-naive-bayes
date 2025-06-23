@@ -109,7 +109,7 @@ if st.button("Phân loại"):
         st.success(f"Văn bản thuộc thể loại: {the_loai.upper()}")
         ket_qua_text = f"KẾT QUẢ PHÂN LOẠI:\n\nThể loại: {the_loai.upper()}\n\nNội dung:\n{noi_dung}"
         st.download_button(
-            label="📥 Tải kết quả về (.txt)",
+            label="Tải kết quả về (.txt)",
             data=ket_qua_text,
             file_name="ket_qua_phan_loai.txt",
             mime="text/plain"
