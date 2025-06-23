@@ -107,3 +107,9 @@ if st.button("Phân loại"):
     else:
         the_loai = phan_loai_van_ban(noi_dung)
         st.success(f"Văn bản thuộc thể loại: {the_loai.upper()}")
+st.download_button(
+            label="📥 Tải kết quả về (.txt)",
+            data=ket_qua_text,
+            file_name="ket_qua_phan_loai.txt",
+            mime="text/plain"
+        )
