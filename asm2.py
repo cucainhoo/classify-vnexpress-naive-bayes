@@ -88,7 +88,7 @@ def phan_loai_van_ban(van_ban):
     return max(xac_suat_the_loai, key=xac_suat_the_loai.get)
 
 # Giao diện Streamlit
-st.title("PHÂN LOẠI VĂN BẢN THEO THỂ LOẠI")
+st.title("Nhận diện thể loại bài báo trên VnExpress")
 st.write("Các thể loại: Kinh doanh, Khoa học - Công nghệ, Bất động sản, Sức khỏe, Thể thao, Giải trí, Pháp luật, Giáo dục, Ô tô - Xe máy, Du lịch")
 
 lua_chon = st.selectbox("Chọn cách nhập nội dung: (1: Nhập tay, 2: Tải file .txt)", [1, 2])
@@ -114,4 +114,5 @@ if st.button("Phân loại"):
             file_name="ket_qua_phan_loai.txt",
             mime="text/plain"
         )
+
 
